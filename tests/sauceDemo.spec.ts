@@ -11,5 +11,7 @@ testFixture('Sauce demo', async ({ page, dashboardPage }) => {
     await expect(dashboardPage.addtocart).toBeEnabled();
     await dashboardPage.addCart();
 
+    console.log("github actions pipeline test")
+
 
 })

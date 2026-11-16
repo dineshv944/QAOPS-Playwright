@@ -12,6 +12,7 @@ testFixture('Sauce demo', async ({ page, dashboardPage }) => {
     await dashboardPage.addCart();
 
     console.log("github actions pipeline test")
+    console.log("new branch for pipeline")
 
 
 })

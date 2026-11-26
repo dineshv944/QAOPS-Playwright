@@ -1,5 +1,7 @@
 import { test, expect } from '@playwright/test'
 
+
+//file upload
 test('file upload', async ({ page }) => {
 
     await page.goto("https://the-internet.herokuapp.com/upload");
@@ -8,7 +10,7 @@ test('file upload', async ({ page }) => {
     await expect(page.locator('#uploaded-files')).toHaveText('Batman-Logo-Evolution-1-1155x770.png');
 })
 
-
+//file-download
 test('file download', async ({ page }) => {
 
     await page.goto("https://the-internet.herokuapp.com/download");
